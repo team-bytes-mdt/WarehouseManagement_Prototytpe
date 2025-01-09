@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Inventory Room</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 20px;
+            margin: 0;
+        }
+
+        header a {
+            text-decoration: none;
+            color: red;
+            font-size: 14px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .new-inventory-btn {
+            background-color: #ff7f11;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .new-inventory-btn:hover {
+            background-color: #e06700;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table th, table td {
+            text-align: left;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        table th {
+            background: #f8f9fa;
+            font-weight: bold;
+        }
+
+        table td {
+            font-size: 14px;
+        }
+
+        .edit-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            padding: 5px 10px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .edit-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Warehouse Management System</h1>
+        <a href="#">Logout</a>
+    </header>
+    <main>
+        <h2>Manage Inventory Room</h2>
+        <button class="new-inventory-btn" onclick="window.location.href='newinventory.html';">+ New Inventory Room</button>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Inventory Room ID</th>
+                    <th>Room Location</th>
+                    <th>Last Updated Datetime</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>1</td>
+                    <td>Room B</td>
+                    <td>2025-01-09T13:25:04.144403</td>
+                    <td><button class="edit-btn">Edit</button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>2</td>
+                    <td>Warehouse B</td>
+                    <td>2024-12-11T10:30:00</td>
+                    <td><button class="edit-btn">Edit</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

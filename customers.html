@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Customer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .navbar-brand img {
+            width: 40px;
+            margin-right: 10px;
+        }
+
+        .table {
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        .table th, .table td {
+            vertical-align: middle;
+        }
+
+        .btn-new-customer {
+            background-color: #FF5B00;
+            color: white;
+            border: none;
+            font-weight: bold;
+        }
+
+        .btn-new-customer:hover {
+            background-color: #e64b00;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="logo.png" alt="Logo">
+                <span>Warehouse Management System</span>
+            </a>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Item</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Customer</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Orders</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Users</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+        <div class="d-flex justify-content-between align-items-center">
+            <h1>Manage Customer</h1>
+            <button class="btn btn-new-customer">+ New Customer</button>
+        </div>
+
+        <!-- Customer Table -->
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <th>No.</th>
+                    <th>Customer ID</th>
+                    <th>Customer Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>01</td>
+                    <td>#7676</td>
+                    <td>Darnell Franey</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>02</td>
+                    <td>#7676</td>
+                    <td>Kristin Prosacco</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>03</td>
+                    <td>#7676</td>
+                    <td>Lucia Legros</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>04</td>
+                    <td>#7676</td>
+                    <td>Gretchen Rutherford</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>05</td>
+                    <td>#7676</td>
+                    <td>Tomas Donnelly</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>06</td>
+                    <td>#7676</td>
+                    <td>Sophia Bode</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>07</td>
+                    <td>#7676</td>
+                    <td>Sammy Hand</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>08</td>
+                    <td>#7676</td>
+                    <td>Howard Armstrong</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>09</td>
+                    <td>#7676</td>
+                    <td>Frankie Fahey</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

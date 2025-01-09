@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .register-container {
+            background: white;
+            width: 400px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .register-container img {
+            width: 60px;
+            margin-bottom: 20px;
+        }
+
+        .register-container h1 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .register-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .register-container .country-code {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #f9f9f9;
+            margin-bottom: 10px;
+        }
+
+        .register-container .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        .register-container button {
+            flex: 1;
+            margin: 0 5px;
+            padding: 10px;
+            font-size: 14px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .save-btn { background-color: #4caf50; }
+        .update-btn { background-color: #2196f3; }
+        .clear-btn { background-color: #f44336; }
+        .create-btn {
+            background-color: #ff9800;
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        .create-btn:hover {
+            background-color: #fb8c00;
+        }
+
+        .register-link {
+            margin-top: 10px;
+        }
+
+        .register-link a {
+            color: #ff6f00;
+            text-decoration: none;
+        }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <img src="logo.png" alt="Logo">
+        <h1>Register</h1>
+        <form action="login.html" method="GET">
+            <input type="text" placeholder="Username" name="username" required>
+            <input type="password" placeholder="Password" name="password" required>
+            <div class="country-code">
+                <img src="flag.png" alt="Country Flag" style="width: 20px;">
+                <select name="country-code">
+                    <option value="+44">+49</option>
+                    <option value="+1">+44</option>
+                    <option value="+91">+91</option>
+                </select>
+            </div>
+            <div class="buttons">
+                <button type="button" class="save-btn">Save</button>
+                <button type="button" class="update-btn">Update</button>
+                <button type="reset" class="clear-btn">Clear</button>
+            </div>
+            <button type="submit" class="create-btn">Create</button>
+        </form>
+
+        <div class="register-link">
+            Sign up here.<a href="login.html">Back to Login</a>
+        </div>
+    </div>
+</body>
+</html>
